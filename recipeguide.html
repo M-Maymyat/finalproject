@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Famous Recipes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌸Famous Recipe Guide💙</h1>
+    <p>Explore delicious dishes from around the world</p>
+    <p>Name-May Myat Mon  ID-240702401880</p>
+    <!-- Search Bar -->
+    <input type="text" id="searchBar" placeholder="🔍 Search for a recipe...">
+
+    <!-- Category Buttons -->
+    <div class="categories">
+      <button data-category="All">All</button>
+      <button data-category="Chinese">Chinese</button>
+      <button data-category="Korean">Korean</button>
+      <button data-category="Japanese">Japanese</button>
+      <button data-category="Burmese">Burmese</button>
+      <button data-category="Thai">Thai</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="recipeList" class="grid"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="recipeModal" class="modal">
+    <div class="modal-content">
+      <span id="closeBtn">&times;</span>
+      <img id="recipeImage" src="" alt="Recipe image">
+      <h2 id="recipeTitle"></h2>
+      <h3>Ingredients</h3>
+      <ul id="recipeIngredients"></ul>
+      <h3>Steps</h3>
+      <ol id="recipeSteps"></ol>
+    </div>
+  </div>
+  
+  <script src="recipes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
